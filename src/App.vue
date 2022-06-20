@@ -1,30 +1,34 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div class="container">
+    <Nav/>
+    <router-view/>
+  </div>
 </template>
+<script>
+import Nav from '@/components/Nav';
+export default {
+  components: {
+    Nav
+  },
+}
+</script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
 }
-
-nav {
-  padding: 30px;
+#app{
+    font-family: 'Poppins', sans-serif;
 }
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
 nav a.router-link-exact-active {
   color: #42b983;
+}
+.container{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #fff;
 }
 </style>

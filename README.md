@@ -1,5 +1,8 @@
 # e-commerce-product
 
+I decided to hop on She-code Africa Technical Assessment. 
+Made with vuejs and vuex
+ ![e-commerce Image](/src/assets/images/desktop.jpg)
 ## Project setup
 ```
 npm install
